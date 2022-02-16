@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!-- logical operators
+   not(!),or(||),and(&&) -->
+   <!-- developer.mozilla.org -->
+   <input type="text" id="result">
+   <button onclick="giveReport()">Give Report</button>
+    <script>
+        function giveReport(){
+            var cScore = result.value;
+            if (cScore < 0 || cScore > 100)
+            {
+                alert("Out Of Range");
+            }
+            else if (cScore >= 0 && cScore < 40)
+            {
+                alert("Fail")
+            }
+            else if (cScore >= 40 && cScore < 50)
+            {
+                alert("Poor")
+            }
+            else if (cScore >= 50 && cScore < 60)
+            {
+                alert("Average")
+            }
+            else if (cScore >= 60 && cScore < 70)
+            {
+                alert("Good")
+            }
+            else if (cScore >= 70 && cScore < 80)
+            {
+                alert("Very Good")
+            }
+            else if (cScore >= 80 && cScore < 101)
+            {
+                alert("Excellent")
+            }
+        }
+        
+    </script>
+</body>
+</html>
